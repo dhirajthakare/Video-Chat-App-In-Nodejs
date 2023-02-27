@@ -23,6 +23,7 @@ const user = prompt("Enter your name");
 
 var peer = new Peer({
   host: 'https://newvidochat.onrender.com',
+  port:80,
   path: '/peerjs',
   config: {
     'iceServers': [
