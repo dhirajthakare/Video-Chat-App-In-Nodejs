@@ -22,7 +22,7 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-  host: '',
+  host: 'nodejs-video-chat-app-dt.onrender.com',
   port:443,
   path: '/peerjs',
   config: {
