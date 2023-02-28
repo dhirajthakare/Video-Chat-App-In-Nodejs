@@ -19,11 +19,13 @@ showChat.addEventListener("click", () => {
   document.querySelector(".header__back").style.display = "block";
 });
 
+console.log(window.location.hostname)
+
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-  host: 'nodejs-video-chat-app-dt.onrender.com',
-  port:443,
+  host: window.location.hostname,
+  port:(window.location.hostname=='localhost'?'3030':443),
   path: '/peerjs',
   config: {
     'iceServers': [
