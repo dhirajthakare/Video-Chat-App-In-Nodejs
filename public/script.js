@@ -22,7 +22,7 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-  host: 'newvidochat.onrender.com',
+  host: '',
   port:443,
   path: '/peerjs',
   config: {
